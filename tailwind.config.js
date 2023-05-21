@@ -1,4 +1,7 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
+	content: ["./src/**/*.{html,js}", "index.html"],
   purge: [
 	'./src/**/*.html',
   ],
@@ -37,6 +40,9 @@ module.exports = {
 			fontFamily: {
 				Montserrat: ["Montserrat", "sans-serif"],
 			 },
+		  colors: {
+			  grey: colors.gray
+		  }
 			
 		},
 	},
